@@ -10,7 +10,8 @@ else
 }
 var yourName = prompt("What's your name, Detective?");
 var answPhone = prompt("**RING RING! RING RING!** Answer phone? y or n");
-if(answPhone === "y" || "Y"){
+answPhone = answPhone.toLowerCase();
+if(answPhone === "y"){
     takeCase = prompt("'Detective " + yourName + " speaking. How may I help you?'   // 'Hi, Detective " + yourName + ", my name is Melanie Goreham and I'm looking for a private detective. My father, Bob Goreham, has gone missing from his week-long cruise through the Artic, and I'd like you to find him. The police think he fell overboard and they've ruled out foul play, but they have very little evidence to go on, so I'm not willing to accept their conclusion. Will you help me find my father?' [y] or [n]");
     if (takeCase === 'y' || "Y"){
       questionFirst = prompt("After getting a little more information from Melanie, it's time to interview some suspects. But who should I start with first?   [J]oseph => Son of Bob. Stands to inherit a large sum of money. / [D]an and Shailene=> Husband and wife, and passengers on the cruise ship. Dan was overheard getting heated with Bob. / [V]erna => Passenger on the cruise ship. Widower three times over and was seen flirting with Bob. / [C]aptain of the cruise ship => Has information that has been withheld from the public.")
